@@ -1,0 +1,117 @@
+:root {
+  --ttt-color:rgb(255, 255, 255); 
+  --primary-color: #ff9368;
+  --accent-color: rgba(231, 109, 90, 1);
+  --accent-color-dark: rgba(226, 77, 54, 1);
+  --dark-color: rgb(247, 39, 2);
+  --light-color: rgb(255 255 255);
+  --page-color: #ff9368;
+  --margin-xxl: 3rem;
+  --margin-xl: 2rem;
+  --margin-lg: 1rem;
+  --margin-med: 0.66rem;
+  --margin-sm: 0.33rem;
+  --base-font-size: 16pt;
+  --border-radius: 6px;
+  --rounded-radius: 4rem;
+  --padding-xxl: 2rem;
+  --padding-xl: 1.4rem;
+  --padding-lg: 1rem;
+  --padding-med: 0.66rem;
+  --padding-sm: 0.33rem;
+  --font: Cursive;
+}
+* {
+  box-sizing: border-box;
+}
+aside{
+  color: aliceblue;
+  border: 2px solid rgba(231, 109, 90, 1);
+  margin-bottom:2rem;
+  padding: 2rem;
+}
+section{
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width:2000px) {
+  section{
+    font-size:2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:1rem;
+  }
+  
+}
+hr{
+  border-top: 1px solid red;
+}
+body {
+  font-size: calc(1rem + 1vw);
+  background: var(--page-color);
+  margin: 0px;
+  font-family: var(--font);
+}
+p, ol li, ul li {
+  color: var(--light-color);
+  font-size: calc(0.8rem + 1vw);
+  
+}
+.why1{
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:1rem;
+}
+.why{
+  text-align: center
+}
+
+h1 {
+  font-size: calc(1rem + 3.5vw);
+  background-color: var(--accent-color);
+  color: var(--ttt-color); 
+  padding: var(--padding-lg) var(--padding-xl);
+  margin: var(--margin-lg) auto;
+}
+h2 {
+  font-size: calc(1rem + 2.7vw);
+  background-color: rgb(214, 110, 68);
+  color: var(--ttt-color); 
+  padding: var(--padding-lg) var(--padding-xl);
+  margin: var(--margin-lg) auto;
+}
+h3 {
+  color: rgb(245, 224, 224);
+  font-size: calc(1rem + 2.1vw);
+}
+h4 {
+  color: rgb(49, 46, 46);
+  font-size: calc(1rem + 1.9vw);
+}
+.why2 {
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(211, 125, 55);
+}
+
+
+table {
+  table-layout: fixed;
+  border-collapse: separate;
+  width: 100%;
+}
+table th {
+  background: var(--dark-color-alt);
+  color: #ffffff;
+}
+table th, table td {
+  margin: 2px;
+  text-align: center;
+  padding: var(--padding-med);
+  border: 2px solid #762500;
+}
+table tr:nth-child(odd) {
+  background-color: #e76225;
+}
